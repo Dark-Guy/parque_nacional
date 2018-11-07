@@ -164,3 +164,7 @@ i{
 .res:hover{
     color: orangered;
 }
+
+.jumbotron{
+    background-color: rgb(194, 240, 187);
+}
