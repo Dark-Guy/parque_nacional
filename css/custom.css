@@ -70,6 +70,22 @@ nav > a > img{
     .apresentacao h1{font-size: 60px;}
 }
 
+/*Icone*/
+i{
+    border: solid rgb(67, 67, 67);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.esquerda{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.direita{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/*Trilhas*/
 .trail{
     width: 100%;
     height: 100%;
@@ -90,7 +106,12 @@ nav > a > img{
     color: rgb(67, 67, 67);    
     font-size: 1rem;
 }
+.trail_img{
+    box-shadow: 0px 5px 5px;
+    border-radius: 5px;
+}
 
+/*Comentarios*/
 .comentario{
     margin-top: 35px;
     padding: 5px;
@@ -122,7 +143,7 @@ nav > a > img{
 .camp h3{
     font-family: "Circular-Book";
     color: rgb(67, 67, 67);
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10px;
 }
 .camp p{
@@ -136,6 +157,9 @@ nav > a > img{
 .camp_img:hover{
     opacity: 0.9;
 
+}
+.res{
+    padding: 1px;
 }
 .res:hover{
     color: orangered;

@@ -11,6 +11,9 @@
     <link href="imagens/icone.png" rel="shortcut icon">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
     <title>Parque Nacional</title>
 </head>
@@ -38,7 +41,7 @@
                         </ul>
                     </div>
                 </nav>
-                
+
                 <div class="apresentacao">
                     <div class="container-fluid">
                         <h1>NATUREZA</h1>
@@ -60,31 +63,35 @@
                     </p>
                 </div>
                 <div class="col-lg-5 col-md-4 col-6">
-                    <img class="img-fluid" src="imagens/card_trilha_1.png">
+                    <img class="img-fluid trail_img" src="imagens/card_trilha_1.png">
                 </div>
                 <div class="col-lg-7 col-md-8 col-6">
                     <h2>
+                        <i class="esquerda"></i>
                         Trilha do Macaco
                     </h2>
                     <p>
                         Extensão: 2KM <br>
-                        Mais Detalhes: Trilha coberta
+                        Mais Detalhes: Trilha coberta<br>
+                        Locomoção: A Pé
                     </p>
                 </div>
 
                 <div class="col-lg-6 col-md-7 col-6">
                     <h2>
-                        Trilha da Cachoeira
+                        Trilha do Peixe
+                        <i class="direita"></i>
                     </h2>
                     <p>
                         Extensão: 10KM <br>
                         Mais Detalhes: Trechos cobertos e descobertos
-                        e trechos molhados
+                        e trechos molhados <br>
+                        Locomoção: A pé
                     </p>
                 </div>
 
                 <div class="col-lg-5 col-md-5 col-6">
-                    <img class="img-fluid" src="imagens/card_trilha_2.png">
+                    <img class="img-fluid trail_img" src="imagens/card_trilha_2.png">
                 </div>
             </div>
         </div>
@@ -98,8 +105,8 @@
             </div>
             <div class="col-6 col-md-6 col-lg-3">
                 <p>"O contato com a natureza traz uma paz inexplicável!"
-                <br><br>
-                -Carla
+                    <br><br>
+                    -Carla
                 </p>
             </div>
 
@@ -107,57 +114,129 @@
                 <img class="img-fluid cmnt_img" src="imagens/cmnt_2.png">
             </div>
             <div class="col-6 col-md-6 col-lg-3">
-                <p>"Além de praticar uma atividade física, 
+                <p>"Além de praticar uma atividade física,
                     você também conhece a importância de preserva-la!"
-                <br><br>
-                -Marcos
+                    <br><br>
+                    -Marcos
                 </p>
             </div>
         </div>
-    </div> 
+    </div>
     <!--Fim Comentario-->
     <!-- Acampamento -->
     <section id="acampamento">
         <div class="container camp">
-            <div class="row">            
+            <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <h1>Acampamento</h1>
-                    <p>Caso queira estender a sua estadia no parque, você poderá estar usando várias de nossas áreas 
+                    <p>Caso queira estender a sua estadia no parque, você poderá estar usando várias de nossas áreas
                         destinadas para acampar
                     </p>
                 </div>
+                <!--Area1-->
                 <div class="col-4 col-lg-4 col-md-4">
-                    <a class="camp_img">
+                    <a class="camp_img" href="" data-toggle="modal" data-target="#modal1">
                         <img class="img-fluid" src="imagens/card_camp_1.png">
                     </a>
-                    <a class="res" href="#">
-                        <h3 class="text-center">Reserve</h3>
-                    </a>        
-                </div>
-                <div class="col-4 col-lg-4 col-md-4">
-                    <a class="camp_img">
-                        <img class="img-fluid" src="imagens/card_camp_2.png">
+                    <a class="res" href="" data-toggle="modal" data-target="#modal1">
+                        <h3 class="text-center">Detalhes</h3>
                     </a>
-                    <a class="res" href="#">
-                        <h3 class="text-center">Reserve</h3>
-                    </a>                 
+                </div>
+                <!--Modal 1-->
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Detalhes da Area 1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                - Barracas não disponiveis<br>
+                                - Ajuda para acendimento de fogueira<br>
+                                - Semi-Cobertura de árvores<br>
+                                - Superficie desgramada
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!--Area 2-->
                 <div class="col-4 col-lg-4 col-md-4">
-                    <a class="camp_img">
+                    <a class="camp_img" href="" data-toggle="modal" data-target="#modal2">
+                        <img class="img-fluid" src="imagens/card_camp_2.png">
+                    </a>
+                    <a class="res" href="" data-toggle="modal" data-target="#modal2">
+                        <h3 class="text-center">Detalhes</h3>
+                    </a>
+                </div>
+                <!--Modal 2-->
+                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel">Detalhes da Area 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                - Barracas individuais disponibilizadas<br>
+                                - Iluminação nas barracas<br>
+                                - Semi-Cobertura de árvores<br>
+                                - Superficie gramada
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Area3-->
+                <div class="col-4 col-lg-4 col-md-4">
+                    <a class="camp_img" href="" data-toggle="modal" data-target="#modal3">
                         <img class="img-fluid" src="imagens/card_camp_3.png">
                     </a>
-                    <a class="res" href="#">
-                        <h3 class="text-center">Reserve</h3>
+                    <a class="res" href="" data-toggle="modal" data-target="#modal3">
+                        <h3 class="text-center">Detalhes</h3>
                     </a>
+
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalLabel">Detalhes da Area 3</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    - Barracas disponibilizadas para 2 pessoas<br>
+                                    - Fogueira disponibilizada<br>
+                                    - Sem cobertura de arvores para melhor vista do céu<br>
+                                    - Superficie gramada <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!--Fim Acampamento-->
-    <br><br><hr>
+    <br><br>
+    <hr>
     <!--Rodapé-->
-    <div class="col-12 text-center">
+    <div class="col-12 text-center rodape">
         <p>Pedro Henrique Rodrigues de Oliveira</p>
         <p>HTML,BOOTSTRAP 4 e CSS</p>
     </div>
