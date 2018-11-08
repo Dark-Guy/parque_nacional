@@ -114,7 +114,6 @@ i{
 /*Comentarios*/
 .comentario{
     margin-top: 35px;
-    padding: 5px;
     box-shadow: 0px 20px 50px rgba(153,153,153,0.5);
 }
 .comentario p{
